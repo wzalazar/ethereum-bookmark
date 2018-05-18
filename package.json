@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/wzalazar/ethereum-deploy#readme",
   "devDependencies": {
+    "ganache-cli": "6.1.0",
     "truffle": "4.1.8"
   },
   "dependencies": {}
