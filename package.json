@@ -1,0 +1,25 @@
+{
+  "name": "ethereal-sol",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "truffle test",
+    "migrate": "truffle migrate",
+    "ganache": "ganache-cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzalazar/ethereum-deploy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wzalazar/ethereum-deploy/issues"
+  },
+  "homepage": "https://github.com/wzalazar/ethereum-deploy#readme",
+  "devDependencies": {
+    "truffle": "4.1.8"
+  },
+  "dependencies": {}
+}
