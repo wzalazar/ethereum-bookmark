@@ -10,7 +10,7 @@
     "ganache": "ganache-cli",
     "ropsten": "rimraf build && npm run migrate -- --network=ropsten",
     "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
