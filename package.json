@@ -8,8 +8,7 @@
     "test": "truffle test",
     "migrate": "truffle migrate",
     "ganache": "ganache-cli",
-    "ropsten": "npm run migrate -- --network=ropsten",
-    "m2": "darq-truffle migrate --reset --network=ropsten"
+    "ropsten": "rimraf build && npm run migrate -- --network=ropsten"
   },
   "repository": {
     "type": "git",
