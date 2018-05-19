@@ -1,11 +1,15 @@
 {
-  "name": "ethereal-sol",
+  "name": "ethereum-bookmark",
   "version": "1.0.0",
   "description": "",
+  "main": "build/contract/Bookmark.json",
   "scripts": {
+    "compile": "rimraf build && truffle compile --verbose",
     "test": "truffle test",
     "migrate": "truffle migrate",
-    "ganache": "ganache-cli"
+    "ganache": "ganache-cli",
+    "ropsten": "npm run migrate -- --network=ropsten",
+    "m2": "darq-truffle migrate --reset --network=ropsten"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,14 @@
   },
   "homepage": "https://github.com/wzalazar/ethereum-deploy#readme",
   "devDependencies": {
+    "darq-truffle": "^4.1.7-roderik.3",
     "ganache-cli": "6.1.0",
+    "rimraf": "^2.6.2",
+    "semantic-release": "15.4.1",
     "truffle": "4.1.8"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "0.0.5",
+    "web3": "^1.0.0-beta.34"
   }
 }
