@@ -7,8 +7,5 @@ script:
   - npm run migrate
   - npm run test
   - npm run ropsten
-deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-    - npx travis-deploy-once "npx semantic-release"
+after_success:
+  - npm run semantic-release

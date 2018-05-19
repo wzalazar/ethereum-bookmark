@@ -1,6 +1,6 @@
 {
   "name": "ethereum-bookmark",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "",
   "main": "build/contract/Bookmark.json",
   "scripts": {
@@ -8,7 +8,8 @@
     "test": "truffle test",
     "migrate": "truffle migrate",
     "ganache": "ganache-cli",
-    "ropsten": "rimraf build && npm run migrate -- --network=ropsten"
+    "ropsten": "rimraf build && npm run migrate -- --network=ropsten",
+    "semantic-release": "semantic-release pre && npm run publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,8 @@
   "dependencies": {
     "truffle-hdwallet-provider": "0.0.5",
     "web3": "^1.0.0-beta.34"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
