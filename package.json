@@ -1,6 +1,6 @@
 {
   "name": "ethereum-bookmark",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "description": "",
   "main": "build/contract/Bookmark.json",
   "scripts": {
@@ -9,7 +9,6 @@
     "migrate": "truffle migrate",
     "ganache": "ganache-cli",
     "ropsten": "rimraf build && npm run migrate -- --network=ropsten",
-    "semantic-release": "semantic-release pre && npm run publish && semantic-release post",
     "commit": "git-cz"
   },
   "repository": {

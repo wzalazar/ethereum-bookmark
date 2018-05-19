@@ -8,4 +8,5 @@ script:
   - npm run test
   - npm run ropsten
 after_success:
-  - npm run semantic-release
+  - npm install -g travis-deploy-once
+  - travis-deploy-once "npm run semantic-release"
