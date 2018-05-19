@@ -1,6 +1,6 @@
+require('dotenv').config()
 const HDWalletProvider = require("truffle-hdwallet-provider");
-const mnemonic = 'wrist sadness mansion leader gadget gloom motor attend diary scissors transfer harbor'
-const wallet = new HDWalletProvider(mnemonic, "https://ropsten.infura.io/8wEJLs1EO2BoAewPXTCL")
+const { ROPSTEN_MNEMONIC } = process.env
 
 module.exports = {
   migrations_directory: "./migrations",
@@ -11,7 +11,7 @@ module.exports = {
       network_id: "*" // Match any network id
     },
     ropsten: {
-      provider: wallet,
+      provider: () => new HDWalletProvider(ROPSTEN_MNEMONIC, "https://ropsten.infura.io/8wEJLs1EO2BoAewPXTCL"),
       gas: 4698712,
       network_id: '3',
     }

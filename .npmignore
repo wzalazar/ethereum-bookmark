@@ -2,5 +2,5 @@ contracts
 migrations
 test
 truffle.js
-.travis
+.travis.yml
 .nvmrc
