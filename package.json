@@ -2,7 +2,7 @@
   "name": "ethereum-bookmark",
   "version": "0.0.0-development",
   "description": "",
-  "main": "build/contract/Bookmark.json",
+  "main": "build/contracts/Bookmark.json",
   "scripts": {
     "compile": "rimraf build && truffle compile --verbose",
     "test": "truffle test",
