@@ -6,7 +6,10 @@ before_script:
 script:
   - npm run migrate
   - npm run test
-  - npm run ropsten
-after_success:
-  - npm install -g travis-deploy-once
-  - travis-deploy-once "npm run semantic-release"
+deploy:
+  script:
+    - npm run ropsten
+    - npm install -g travis-deploy-once
+    - travis-deploy-once "npm run semantic-release"
+  on:
+    branch: master
