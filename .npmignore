@@ -1,0 +1,6 @@
+contracts
+migrations
+test
+truffle.js
+.travis
+.nvmrc
