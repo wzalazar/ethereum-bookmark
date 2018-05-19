@@ -7,5 +7,7 @@ script:
   - npm run migrate
   - npm run test
 after_success:
+  - echo "TRAVIS_BRANCH= $TRAVIS_BRANCH"
+  - echo "TRAVIS_PULL_REQUEST_BRANCH= $TRAVIS_PULL_REQUEST_BRANCH"
   - (test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST_BRANCH = "") &&
     (npm run ropsten && npm install -g travis-deploy-once && travis-deploy-once "npm run semantic-release")
