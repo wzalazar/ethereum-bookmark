@@ -6,7 +6,7 @@ before_script:
 script:
   - npm run migrate
   - npm run test
-  - npm ropsten
+  - npm run ropsten
 deploy:
   provider: script
   skip_cleanup: true
