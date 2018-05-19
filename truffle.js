@@ -1,8 +1,6 @@
 require('dotenv').config()
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const { ROPSTEN_MNEMONIC } = process.env
-console.log("ROPSTEN_MNEMONIC ",ROPSTEN_MNEMONIC)
-
 
 module.exports = {
   migrations_directory: "./migrations",
