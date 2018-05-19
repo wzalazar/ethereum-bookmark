@@ -1,4 +1,3 @@
-require('dotenv').config()
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const { ROPSTEN_MNEMONIC } = process.env
 
