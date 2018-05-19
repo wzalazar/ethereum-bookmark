@@ -7,7 +7,7 @@ script:
   - npm run migrate
   - npm run test
 after_success:
-  if: branch = master
+  - if: branch = master
   - npm run ropsten
   - npm install -g travis-deploy-once
   - travis-deploy-once "npm run semantic-release"
