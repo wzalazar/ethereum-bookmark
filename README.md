@@ -5,7 +5,6 @@
 
 Example, continuous delivery with semantic deploy of a smart contract. This project works with Ropsten faucet or in your local environment with Ganache.
 
-
 # First steps, local environment
 
 ```
