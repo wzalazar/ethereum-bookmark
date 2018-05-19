@@ -9,7 +9,8 @@
     "migrate": "truffle migrate",
     "ganache": "ganache-cli",
     "ropsten": "rimraf build && npm run migrate -- --network=ropsten",
-    "semantic-release": "semantic-release pre && npm run publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm run publish && semantic-release post",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/wzalazar/ethereum-deploy#readme",
   "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "darq-truffle": "^4.1.7-roderik.3",
     "ganache-cli": "6.1.0",
     "rimraf": "^2.6.2",
@@ -35,5 +38,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
