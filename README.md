@@ -22,7 +22,6 @@ https://www.npmjs.com/package/ethereum-bookmark
 ```
 npm i ethereum-bookmark
 
-
 ```
 
 # Ropsten Faucet
