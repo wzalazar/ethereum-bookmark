@@ -8,7 +8,6 @@ Example, continuous delivery with semantic deploy of a smart contract. This proj
 # First steps, local environment
 
 ```
-
 npm install
 npm run ganache
 npm run migrate
@@ -22,6 +21,7 @@ https://www.npmjs.com/package/ethereum-bookmark
 
 ```
 npm i ethereum-bookmark
+
 
 ```
 
